@@ -1,0 +1,26 @@
+# Ignore WordPress core
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+/wp-*.php
+
+# Ignore uploads
+wp-content/uploads/
+
+# Ignore config and sensitive files
+wp-config.php
+*.sql
+*.env
+
+# Node, Composer, IDEs
+node_modules/
+vendor/
+.DS_Store
+*.log
+
+# Backup files
+*.zip
+*.tar.gz

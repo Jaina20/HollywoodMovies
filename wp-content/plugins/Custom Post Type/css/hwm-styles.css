@@ -1,0 +1,161 @@
+.hwm-movies-container {
+    padding: 40px;
+   
+}
+
+/* Filtre et recherche */
+.hwm-filter-search {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* Fond blanc pour contraste */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Ombre légère */
+}
+
+.hwm-search-form {
+    width: 100%;
+    display: flex;
+    gap: 4px;    
+}
+
+.hwm-search-form input[type="text"] {
+    border: 1px solid #e0e0e0; /* Bordure douce */
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Animation fluide */
+}
+
+.hwm-search-form input[type="text"]:focus {
+    border-color: #007bff; /* Bleu vif au focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Halo subtil */
+}
+
+.hwm-search-form button {
+    border-radius: 6px;
+    padding: 5px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animations */
+}
+
+.hwm-search-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Carte de film */
+.card {
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 4px; /* Coins arrondis */
+    overflow: hidden; /* Pour que l’image respecte les coins */
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); /* Ombre élégante */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au survol */
+    background-color: #ffffff; /* Fond blanc pour contraste */
+}
+
+
+
+.card-img-top {
+    height: 350px; /* Hauteur augmentée pour les affiches */
+    object-fit: cover; /* Image bien ajustée */
+    border-bottom: 2px solid #f0f0f0; /* Séparation subtile */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a; /* Noir profond */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #666; /* Gris pour la description */
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card p strong {
+    color: #333; /* Gris foncé pour les labels */
+    font-weight: 600;
+}
+
+/* Style pour la carte d’un film spécifique */
+.hwm-single-movie {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 600px; 
+    margin: 20px auto;
+}
+
+.hwm-single-movie .card-img-top {
+    height: 400px;
+}
+
+.hwm-single-movie .card-title {
+    font-size: 2rem; 
+    text-align: center;
+}
+
+.hwm-single-movie .card-text {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .hwm-movies-container {
+        padding: 10px;
+    }
+
+    .hwm-filter-search {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+   
+
+    .hwm-search-form input[type="text"] {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .hwm-search-form button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        height: 250px; /* Réduit pour mobile */
+    }
+
+    .hwm-single-movie .card-img-top {
+        height: 300px;
+    }
+
+    .hwm-single-movie .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Amélioration des liens cliquables */
+a.text-decoration-none .card {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.text-decoration-none:hover .card-title {
+    color: #007bff; /* Bleu au survol pour le titre */
+}
